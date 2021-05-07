@@ -12,7 +12,14 @@ BOT_NAME = 'scraper'
 SPIDER_MODULES = ['scraper.spiders']
 NEWSPIDER_MODULE = 'scraper.spiders'
 
-
+import sys
+sys.path.append('/Users/eduardoborba/track_website_changes')
+import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'track_website_changes.settings'
+# If you you use django outside of manage.py context, you
+# need to explicitly setup the django
+import django
+django.setup()
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scraper (+http://www.yourdomain.com)'
