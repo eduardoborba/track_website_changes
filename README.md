@@ -1,3 +1,11 @@
+# Track Website Changes
+
+This is an experimental project that aims in building a web interface to
+setup different scraping targets to track. Basically, if you want to track
+changes in a specific area of a website, let's say looking for appointments
+for something, you could setup a new scraping target with a URL and a selector
+and when the content in that area of that website changes you will be notified somehow.
+
 # Running django server
 
 ```
