@@ -6,7 +6,8 @@ from django.db import models
 class ScrapeTarget(models.Model):
     scrape_url = models.CharField(max_length=1024)
     scrape_selector = models.CharField(max_length=1024)
-    last_scraped = models.DateTimeField(null=True)
+    last_scraped_at = models.DateTimeField(null=True)
+    last_enqueued_at = models.DateTimeField(null=True)
 
 class ScrapeResult(models.Model):
     scrape_target = models.ForeignKey(ScrapeTarget, on_delete=models.CASCADE)

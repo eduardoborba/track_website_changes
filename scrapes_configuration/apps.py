@@ -1,4 +1,5 @@
 from django.apps import AppConfig
+import django_rq
 
 
 class ScrapesConfigurationConfig(AppConfig):
